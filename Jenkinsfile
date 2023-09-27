@@ -30,7 +30,7 @@ pipeline {
             }
         }
              
-    
+    /*
     stage('Push') {
             steps {
                 script{
@@ -41,6 +41,7 @@ pipeline {
                 }
             }
         }
+      */
         
     stage('Deploy'){
             steps {
