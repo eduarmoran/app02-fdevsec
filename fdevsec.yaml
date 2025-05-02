@@ -1,14 +1,14 @@
 id:
-  org: 72adc4c9-2ba3-4e38-823b-4f74a4101882
-  app: 715fb86c-2141-45b2-be68-6f7feee6a80e
+  org: 1c8e09f8-da70-45a7-bda6-af03728803dc
+  app: f5b50fcf-6fa9-4fca-9a1c-c89eb595a5db
 
 # If below settings are not configured, scans will be performed for all supported scanners.
-#scanners:
-#  - sast
-#  - sca
-#  - secret
-#  - iac
-#  - container
+scanners:
+  - sast
+  - sca
+  - secret
+  - iac
+  - container
 #  - dast
 
 # Configures languages for sast scanner. If not configured, scans will be performed on all supported languages
@@ -24,6 +24,11 @@ id:
 # Language scanners run sequentially by default. Can be configured to run in parallel.
 #resource:
 #  serial_scan: true #true|false
+
+# Configures files or directories that should be excluded from the scan
+#exclude_path:
+#  - example_dir
+#  - example_file.extension
 
 # CI/CD pipeline fails when risk rating(range 0-9) exceeds the configured value.
 #fail_pipeline:
